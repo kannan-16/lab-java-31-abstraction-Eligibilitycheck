@@ -1,38 +1,20 @@
 package model;
 
-public class CDS extends Abstract {
-	
-	private int height;
-	private int weight;
-	private int tooth;
-	private String vision;
-	private String swim;
-	
-	public CDS(int age, String maritial, String country, int height, int weight, int tooth, String vision, String swim) {
-		super(age, maritial, country);
-		this.height=height;
-		this.weight=weight;
-		this.tooth=tooth;
-		this.vision=vision;
-		this.swim=swim;
-		}
-	
-	public boolean cdsEligible()
-	{
-		if(height>=152 && weight>=54 && tooth>=14 && tooth<=17 && !vision.equals("other") && swim.equals("yes"))
-		{
-			return true;
-		}
-		else
-			return false;
-	}
+//Creates a class named CDS which inherits the class Abstract
 
+
+	//Create private variables named height, weight and tooth of the type integer and vision, swim of type String
+	
+	
+	//Create a constructor with 8 paraameters
+	//In the order age, marital, country, height, weight, tooth, vision and swim
+
+		//Call the super class members
+
+		//Assign the corresponding values using 'this' keyword 
 		
-	}
+	
+	//Create a method named cdsEligible of boolean return type
 
-	
-
-	
-	
-	
-
+		//If the person heighs more than 152, weighs more than 54, tooth count falls between 14 and 17, vision is not eaual to other and knows to swim then return true
+		//Else return false

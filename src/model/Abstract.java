@@ -1,27 +1,17 @@
 package model;
 
-public abstract class Abstract {
+//Create an abstract class named Abstract
 
-	   private int age;
-	   private String maritial;
-	   private String country;
+	   //Create a private integer variabale named age and two private string variables named marital and country
 	   
-	 public Abstract(int age,String maritial,String country)
-	 {
-		 this.age=age;
-		 this.maritial=maritial;
-		 this.country=country;
-	 }
-	 
-	   public boolean baseEligibility()
-	 {
-		if(age>=18 && age<=32 &&  maritial.equals("Unmarried") && (country.equals("India")||country.equals("india")))
-		{
-			return true;
-		}
-		else
-			return false;
-		 
-	 }
-
-}
+	   
+	   //Create a constructor with three parameters
+	   //In the order age, marital, country
+	   
+		   //Assign the corresponding values
+		
+	   
+	   //Create a method named baseEligibility with a boolean return type
+	  
+		   //If age falls between 18 and 32, marital status is unmarried, country is India return true. 
+		   //Else return false

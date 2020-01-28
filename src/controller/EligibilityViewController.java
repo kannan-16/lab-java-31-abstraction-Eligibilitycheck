@@ -9,9 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.CDS;
-import model.IAS;
-import model.IBPS;
+//Uncomment the below lines
+//import model.CDS;
+//import model.IAS;
+//import model.IBPS;
 
 
 @WebServlet(urlPatterns= {"/eligible"})
@@ -31,8 +32,10 @@ public class EligibilityViewController extends HttpServlet {
 		rd.forward(request, response);
 	}
 
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		//Uncomment the below lines
+		/*
 		String name=request.getParameter("name");
 		String fatherName=request.getParameter("fname");
 		int age=Integer.parseInt(request.getParameter("age"));
@@ -179,8 +182,8 @@ public class EligibilityViewController extends HttpServlet {
 				RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/outputView.jsp");
 				rd.forward(request, response);
 				
+		*/
 	}
 
 }
 
-}

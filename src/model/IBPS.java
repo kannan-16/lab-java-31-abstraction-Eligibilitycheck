@@ -1,23 +1,12 @@
 package model;
 
-public class IBPS extends Abstract {
+//Create a public class named IBPS which inherits Abstract
 
-	private String computer;
+	//Create a private String variable called computer
 
-	public IBPS(int age, String maritial, String country, String computer) {
-		super(age, maritial, country);
-		this.computer=computer;
-		}
+	//Create a constructor with four parameters
 	
-	public boolean ibpsEligible()
-	{
-		if(computer.equals("yes"))
-		{
-			return true;
-		}
-		else
-			return false;
-		
-	}
+	//Create a method named ibpsEligible of return type boolean
 
-}
+		//If the candidate knows to work in computer return true
+		//Else return false
